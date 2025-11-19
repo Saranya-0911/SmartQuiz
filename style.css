@@ -152,14 +152,9 @@ form{
     padding:30px 50px;
 }
 
-label{
+label, input{
    font-size:30px;
 }
-    
-input {
-   font-size:30px;
- }
-
 
 .op{
     margin-top:20px;
@@ -315,13 +310,13 @@ i{
     float:left;
 }
     #title {
-        font-size: 40px;
+        font-size: 30px;
         padding-left: 70px;
     }
 
     .t {
         margin-left: 10px;
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .qn {
@@ -377,6 +372,7 @@ i{
 }
 
 }
+
 
 
 
