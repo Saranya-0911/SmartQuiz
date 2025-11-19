@@ -116,9 +116,8 @@ footer {
     width:auto;
     height:auto;
     position:fixed;
-    font-size:35px;
     color:green; 
-    font-size: 20px; 
+    font-size: 50px; 
     font-weight:bold; 
     float:left;
 }
@@ -311,9 +310,8 @@ i{
     width:auto;
     height:auto;
     position:fixed;
-    font-size:35px;
     color:green; 
-    font-size: 20px; 
+    font-size: 50px; 
     font-weight:bold; 
     float:left;
 }
@@ -382,6 +380,7 @@ i{
     }
 
 }
+
 
 
 
