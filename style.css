@@ -111,6 +111,17 @@ footer {
 
 
 /* Quiz */
+#timer{
+    background-color:white;
+    width:auto;
+    height:auto;
+    position:fixed;
+    font-size:35px;
+    color:green; 
+    font-size: 20px; 
+    font-weight:bold; 
+    float:left;
+}
 
 #testbody{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -295,6 +306,17 @@ i{
 
     /* Quiz Page */
 
+    #timer{
+    background-color:white;
+    width:auto;
+    height:auto;
+    position:fixed;
+    font-size:35px;
+    color:green; 
+    font-size: 20px; 
+    font-weight:bold; 
+    float:left;
+}
     #title {
         font-size: 40px;
         padding-left: 10px;
@@ -360,6 +382,7 @@ i{
     }
 
 }
+
 
 
 
