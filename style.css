@@ -153,7 +153,7 @@ form{
 }
 
 label{
-   font-size:20px;
+   font-size:30px;
 }
     
 input {
@@ -336,7 +336,7 @@ i{
     }
 
     label{
-        font-size:30px;
+        font-size:20px;
     }
     
     input {
@@ -377,6 +377,7 @@ i{
 }
 
 }
+
 
 
 
