@@ -315,13 +315,13 @@ i{
     float:left;
 }
     #title {
-        font-size: 30px;
+        font-size: 40px;
         padding-left: 50px;
     }
 
     .t {
         margin-left: 10px;
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .qn {
@@ -336,7 +336,7 @@ i{
     }
 
     label{
-        font-size:20px;
+        font-size:30px;
     }
     
     input {
@@ -377,6 +377,7 @@ i{
 }
 
 }
+
 
 
 
