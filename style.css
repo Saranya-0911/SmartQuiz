@@ -302,6 +302,7 @@ i{
     background-color:white;
     width:auto;
     height:auto;
+    margin-top:0;
     position:fixed;
     color:green; 
     font-size: 10px; 
@@ -358,6 +359,7 @@ i{
     }
 
 }
+
 
 
 
