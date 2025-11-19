@@ -348,16 +348,17 @@ i{
     }
 
     #result {
-        width: 90%;
-        height: auto;
+        width: 100%;
+        height: 100;
         padding: 20px 10px;
     }
 
     #score {
-        font-size: 40px;
+        font-size: 100px;
     }
 
     #msg {
-        font-size: 30px;
+        font-size: 90px;
     }
+
 }
