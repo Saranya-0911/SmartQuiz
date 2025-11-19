@@ -152,8 +152,8 @@ form{
     padding:30px 50px;
 }
 
-label, input{
-   font-size:40px;
+label{
+   font-size:30px;
 }
 
 input{
@@ -334,7 +334,7 @@ i{
         padding: 10px;
     }
 
-    b{
+    label{
         font-size:20px;
     }
     
@@ -376,20 +376,3 @@ i{
 }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
