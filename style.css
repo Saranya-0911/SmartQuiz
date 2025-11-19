@@ -358,7 +358,7 @@ i{
     }
 
     #result {
-        width: 100%;
+        width: max-content;
         height: auto;
         padding: 20px 20px;
     }
@@ -373,5 +373,6 @@ i{
 }
 
 }
+
 
 
