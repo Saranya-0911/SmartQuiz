@@ -152,6 +152,9 @@ form{
     padding:30px 50px;
 }
 
+label{
+    font-size:20px;
+}
 input{
    font-size:30px;
 }
@@ -368,3 +371,4 @@ i{
 }
 
 }
+
