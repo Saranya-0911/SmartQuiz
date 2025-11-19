@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> SQL Quizz </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body id="body">
+        <h1 id="heading">🎯 SMARTQUIZ – INTERACTIVE MCQ SYSTEM</h1>
+        <h1 id="title"> SQL Quiz</h1>
+        <div id="timer" style="color:green; font-size: 20px; font-weight:bold; margin-left:1200px;">
+            Time Left: <span id="time">60</span> Seconds
+        </div>
+        <h3 class="t"> Questions : </h3>
+        <div class="qn">
+            <p> </p>
+            <form action="#" onsubmit="return result()">
+                <label for=""><b>1. Which SQL statement is used to extract data from a database?</b></label> <br> <br> 
+                <div class="op"><input type="radio" name="1. Which SQL statement is used to extract data from a database?"> GET</div>
+                <div class="op"><input type="radio" name="1. Which SQL statement is used to extract data from a database?"> EXTRACT</div>
+                <div class="op"><input type="radio" class="1" name="1. Which SQL statement is used to extract data from a database?"> SELECT</div>
+                <br> <br> <br>
+
+                <label for=""><b>2. Which clause is used to filter records in SQL?</b></label> <br> <br> 
+                <div class="op"><input type="radio" name="2. Which clause is used to filter records in SQL?" > SORT BY</div>
+                <div class="op"><input type="radio" class="2" name="2. Which clause is used to filter records in SQL?"> WHERE</div>
+                <div class="op"><input type="radio" name="2. Which clause is used to filter records in SQL?"> FILTER </div>
+                <br> <br> <br>
+
+                <label for=""><b>3. Which SQL keyword is used to sort the result set?</b></label> <br> <br> 
+                <div class="op"><input type="radio" name="3. Which SQL keyword is used to sort the result set?"> ORDER BY </div>
+                <div class="op"><input type="radio" class="3" name="3. Which SQL keyword is used to sort the result set?"> GROUP BY</div>
+                <div class="op"><input type="radio" name="3. Which SQL keyword is used to sort the result set?"> SORT</div>
+                <br> <br> <br>
+
+                <label for=""><b>4. What does the AVG() function do?</b></label> <br> <br> 
+                <div class="op"><input type="radio" name="4. What does the AVG() function do?"> Calculates the total</div>
+                <div class="op"><input type="radio" name="4. What does the AVG() function do?"> Counts rows</div>
+                <div class="op"><input type="radio" class="4" name="4. What does the AVG() function do?"> Returns average value</div>
+                 <br> <br> <br>
+
+                <label for=""><b>5. Which statement is used to insert new data into a table? </b></label> <br> <br> 
+                <div class="op"><input type="radio" name="5. Which statement is used to insert new data into a table?"> ADD</div>
+                <div class="op"><input type="radio" class="5" name="5. Which statement is used to insert new data into a table?"> INSERT INTO</div>
+                <div class="op"><input type="radio" name="5. Which statement is used to insert new data into a table?"> NEW DATA</div>
+                <br> <br> <br>
+
+                <label for=""><b>6. Which SQL clause is used to remove duplicate rows?</b></label> <br> <br> 
+                <div class="op"><input type="radio" name="6. Which SQL clause is used to remove duplicate rows?"> UNIQUE</div>
+                <div class="op"><input type="radio" class="6" name="6. Which SQL clause is used to remove duplicate rows?"> DISTINCT</div>
+                <div class="op"><input type="radio" name="6. Which SQL clause is used to remove duplicate rows?"> DELETE</div>
+                <br> <br> <br>
+
+                <label for=""><b>7. Which function is used to count the number of rows?</b></label> <br> <br> 
+                <div class="op"><input type="radio" name="7. Which function is used to count the number of rows?"> SUM() </div>
+                <div class="op"><input type="radio" class="7" name="7. Which function is used to count the number of rows?"> COUNT()</div>
+                <div class="op"><input type="radio" name="7. Which function is used to count the number of rows?"> TOTAL()</div>
+                <br> <br> <br>
+
+                <label for=""><b>8. What does the PRIMARY KEY do?</b></label> <br> <br> 
+                <div class="op"><input type="radio" name="8. What does the PRIMARY KEY do?"> Prevents NULL and ensures uniqueness</div>
+                <div class="op"><input type="radio" class="8" name="8. What does the PRIMARY KEY do?"> Allows duplicate values</div>
+                <div class="op"><input type="radio" name="8. What does the PRIMARY KEY do?"> Auto-sorts data</div>
+                <br> <br> <br>
+
+                <label for=""><b>9. Which SQL statement is used to delete data?</b></label> <br> <br> 
+                <div class="op"><input type="radio"name="9. Which SQL statement is used to delete data?"> REMOVE</div>
+                <div class="op"><input type="radio" class="9" name="9. Which SQL statement is used to delete data?">DELETE</div>
+                <div class="op"><input type="radio" name="9. Which SQL statement is used to delete data?"> DROP</div>
+                <br> <br> <br>
+
+                <label for=""><b>10. What does the GROUP BY clause do?</b></label> <br> <br> 
+                <div class="op"><input type="radio" name="10. What does the GROUP BY clause do?"> Sorts rows</div>
+                <div class="op"><input type="radio" class="10" name="10. What does the GROUP BY clause do?"> Groups rows with same values</div>
+                <div class="op"><input type="radio" name="10. What does the GROUP BY clause do?"> Joins two tables</div>
+                <br> <br> <br>
+
+                <input class="sub" type="submit" value="submit">
+            </form>
+        </div>
+
+        <script>
+            let mark = 0;
+            function result() {
+        let mark = 0;
+
+        for (let i = 1; i <= 10; i++) {
+            let correctOption = document.querySelector("input[class='" + i + "']");
+            
+            if (correctOption && correctOption.checked) {
+                mark++;
+            }
+        }
+
+        // Open a new Page & prints result
+        window.location.href = "htmlres.html?mark=" + mark;
+        return false;  // prevent form submission
+    }
+        </script>
+
+         <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> CSS Quizz </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body id="body">
+        <h1 id="heading">🎯 SMARTQUIZ – INTERACTIVE MCQ SYSTEM</h1>
+        <h1 id="title"> CSS Quiz</h1>
+        <div id="timer" style="color:green; font-size: 20px; font-weight:bold; margin-left:1200px;">
+            Time Left: <span id="time">60</span> Seconds
+        </div>
+        <h3 class="t"> Questions : </h3>
+        <div class="qn">
+            <p> </p>
+            <form action="#" onsubmit="return result()">
+                <label for=""><b>1. What does CSS stand for?</b></label> <br> <br> 
+                <div class="op"><input type="radio" class="1" name="1. What does CSS stand for?"> Cascading Style Sheets</div>
+                <div class="op"><input type="radio" name="1. What does CSS stand for?"> Creative Style System</div>
+                <div class="op"><input type="radio" name="1. What does CSS stand for?"> Computer Styling Sheet</div>
+                <br> <br> <br>
+
+                <label for=""><b>2. Which HTML tag is used to link an external CSS file?</b></label> <br> <br> 
+                <div class="op"><input type="radio" name="2. Which HTML tag is used to link an external CSS file?" > style</div>
+                <div class="op"><input type="radio" name="2. Which HTML tag is used to link an external CSS file?"> CSS</div>
+                <div class="op"><input type="radio" class="2" name="2. Which HTML tag is used to link an external CSS file?"> link</div>
+                <br> <br> <br>
+
+                <label for=""><b>3. Which property is used to change the text color in CSS?</b></label> <br> <br> 
+                <div class="op"><input type="radio" name="3. Which property is used to change the text color in CSS?"> font-color </div>
+                <div class="op"><input type="radio" name="3. Which property is used to change the text color in CSS?"> color</div>
+                <div class="op"><input type="radio" class="3" name="3. Which property is used to change the text color in CSS?"> text-color</div>
+                <br> <br> <br>
+
+                <label for=""><b>4. Which CSS property controls the size of text?</b></label> <br> <br> 
+                <div class="op"><input type="radio" name="4. Which CSS property controls the size of text?"> text-size</div>
+                <div class="op"><input type="radio" class="4" name="4. Which CSS property controls the size of text?"> font-size</div>
+                <div class="op"><input type="radio" name="4. Which CSS property controls the size of text?"> size</div>
+                 <br> <br> <br>
+
+                <label for=""><b>5. Which value makes an element’s border rounded? </b></label> <br> <br> 
+                <div class="op"><input type="radio" name="5. Which value makes an element’s border rounded?"> border-round</div>
+                <div class="op"><input type="radio" class="5" name="5. Which value makes an element’s border rounded?"> border-radius</div>
+                <div class="op"><input type="radio" name="5. Which value makes an element’s border rounded?"> border-radius</div>
+                <br> <br> <br>
+
+                <label for=""><b>6. Which CSS property is used to change the background color?</b></label> <br> <br> 
+                <div class="op"><input type="radio" class="6" name="6. Which CSS property is used to change the background color?"> background-color</div>
+                <div class="op"><input type="radio" name="6. Which CSS property is used to change the background color?"> bgcolor</div>
+                <div class="op"><input type="radio" name="6. Which CSS property is used to change the background color?"> color-background</div>
+                <br> <br> <br>
+
+                <label for=""><b>7. Which property is used to change the font of an element?</b></label> <br> <br> 
+                <div class="op"><input type="radio" class="7" name="7. Which property is used to change the font of an element?"> font-family</div>
+                <div class="op"><input type="radio" name="7. Which property is used to change the font of an element?"> font-style</div>
+                <div class="op"><input type="radio" name="7. Which property is used to change the font of an element?"> font-type</div>
+                <br> <br> <br>
+
+                <label for=""><b>8. Which property is used to add space inside an element’s border?</b></label> <br> <br> 
+                <div class="op"><input type="radio" name="8. Which property is used to add space inside an element’s border?"> margin</div>
+                <div class="op"><input type="radio" class="8" name="8. Which property is used to add space inside an element’s border?"> padding</div>
+                <div class="op"><input type="radio" name="8. Which property is used to add space inside an element’s border?"> spacing</div>
+                <br> <br> <br>
+
+                <label for=""><b>9. Which CSS property is used to hide an element?</b></label> <br> <br> 
+                <div class="op"><input type="radio"name="9. Which CSS property is used to hide an element?"> display: hidden;</div>
+                <div class="op"><input type="radio" name="9. Which CSS property is used to hide an element?"> visibility: none;</div>
+                <div class="op"><input type="radio" class="9"  name="9. Which CSS property is used to hide an element?"> display: none;</div>
+                <br> <br> <br>
+
+                <label for=""><b>10.Which property changes the cursor icon when hovering over an element?</b></label> <br> <br> 
+                <div class="op"><input type="radio" name="10. Which property changes the cursor icon when hovering over an element?"> mouse-pointer</div>
+                <div class="op"><input type="radio" class="10" name="10. Which property changes the cursor icon when hovering over an element?"> cursor</div>
+                <div class="op"><input type="radio" name="10. Which property changes the cursor icon when hovering over an element?"> pointer-style</div>
+                <br> <br> <br>
+
+                <input class="sub" type="submit" value="submit">
+            </form>
+        </div>
+
+        <script>
+            let mark = 0;
+            function result() {
+        let mark = 0;
+
+        for (let i = 1; i <= 10; i++) {
+            let correctOption = document.querySelector("input[class='" + i + "']");
+            
+            if (correctOption && correctOption.checked) {
+                mark++;
+            }
+        }
+
+        // Open a new Page & prints result
+        window.location.href = "htmlres.html?mark=" + mark;
+        return false;  // prevent form submission
+    }
+        </script>
+
+         <script src="script.js"></script>
+    </body>
+</html>

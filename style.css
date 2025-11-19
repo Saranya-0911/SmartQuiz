@@ -1,0 +1,363 @@
+/* Main Page */
+.indexbody{
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    font-family: 'Poppins', sans-serif;
+}
+
+.quizlogo{
+    height:80px;
+    width:150px;
+    margin-left:30px;
+    border-radius:150px;
+}
+
+#heading{
+   text-align:center;
+   color:red;
+   padding-top:50px;
+   text-shadow:2px 3px 5px rgb(216, 97, 91);
+}
+
+#welcome{
+   text-align:center;
+   color:green;
+   padding-top:50px;
+   text-shadow:2px 3px 5px rgb(96, 142, 96);
+}
+
+#jk{
+   text-align:center;
+   padding:40px;
+}
+
+.reason{
+        padding:0px 130px; 
+        line-height:30px;
+}
+
+#test{
+    color:black;
+    border-radius:10px;
+    width:80%;
+    margin:auto;
+    padding-bottom:50px;
+}
+
+.b {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    width: 100%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.start {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.start:hover {
+    transform: scale(1.04);
+}
+
+.sublogo{
+    height:200px;
+    width:100%;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+
+.subject{
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 700; 
+    font-size:28px; 
+    color:#4B0082;
+    padding-top:30px;
+}
+
+.det{
+    color:#5A0430; 
+    font-family: 'Lato', sans-serif; 
+    font-size:16px; 
+    line-height:1.5;
+}
+
+.qnmark{
+    font-family: 'Open Sans', sans-serif; 
+    font-size:14px; 
+    color:#333;
+}
+
+.take{
+    padding:10px 20px;
+    border-radius:20px;
+    background-color:rgb(74, 139, 229);
+    margin:30px;
+    font-family: 'Poppins', sans-serif; 
+    font-weight:600; 
+    font-size:16px;
+}
+
+footer {  
+    text-align:center;
+    padding-bottom: 50px;
+}
+
+
+
+/* Quiz */
+
+#testbody{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e0e5ec, #cfd8dc);
+}
+
+#title{
+    padding-left:600px;
+    padding-top:40px;
+    padding-bottom:50px;
+    color:rgb(8, 79, 101);
+    font-size:40px;
+    display:inline-block;
+}
+
+#timer{
+    color:green; 
+    font-size: 20px; 
+    font-weight:bold; 
+    float:right;
+    position:fixed;
+}
+
+.t{
+    font-size:35px;
+    color:purple;
+    margin-left:100px;
+}
+
+.qn{
+    width:600px;
+    margin-left:100px;
+    height:300px;
+}
+
+form{
+    padding:30px 50px;
+}
+
+label, input{
+    font-size:20px;
+}
+
+.op{
+    margin-top:20px;
+    margin-left:50px;
+    background-color:rgb(238, 236, 236);
+    border-radius:10px;
+    padding:20px;
+}
+
+.sub{
+    padding:20px 40px;
+    border-radius:20px;
+    background-color:rgb(12, 167, 12);
+    border-color:rgb(12, 167, 12);
+    margin-left:500px;
+}
+
+.sub:hover{
+    cursor:pointer;
+}
+
+
+/* Result Page */
+
+#resultbody{
+    background-image:url('result.jpg');
+    text-align:center;
+}
+
+#result{
+   background-color: rgb(213, 234, 213);
+   border-radius:20px;
+   width:450px;
+   margin:auto;
+   height:300px;
+   padding-top:25px;
+   text-align:center;
+}
+
+#divtit{
+    padding-top:10px;
+    color:green;
+    font-size:30px;
+}
+
+#score{
+    text-align:center;
+    padding-top:30px;
+}
+
+#msg{
+    font-size: 20px;
+    padding-top:20px;
+    display:inline-block;
+}
+
+i{
+    color:green;
+    height:30px;
+    width:30px;
+    padding-left:30px;
+}
+
+
+
+
+
+/* ===================================================================
+   ===============   MOBILE RESPONSIVE DESIGN BELOW   ================
+   =================================================================== */
+
+@media (max-width: 768px) {
+
+    /* Main headings */
+    #heading {
+        font-size: 25px;
+        padding: 20px 10px;
+    }
+
+    #welcome {
+        font-size: 20px;
+        padding-top: 20px;
+    }
+
+    .quizlogo {
+        height: 60px;
+        width: 100px;
+        margin-left: 0;
+    }
+
+    #jk{
+        padding:30px;
+    }
+
+    .reason{
+        text-align:center;
+        line-height:30px;
+        font-size:20px;
+    } 
+    
+
+    /* Home page main container */
+    #test {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    /* Cards become single column */
+    .b {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .start {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .sublogo {
+        height: 180px;
+    }
+
+    .subject {
+        font-size: 22px;
+        padding-top: 15px;
+    }
+
+    .det, .qnmark {
+        font-size: 14px;
+        padding: 5px 15px;
+    }
+
+    .take {
+        width: 80%;
+        margin: 20px auto;
+        font-size: 15px;
+    }
+
+    /* Quiz Page */
+
+    #title {
+        font-size: 40px;
+        padding-left: 10px;
+    }
+
+    .t {
+        margin-left: 10px;
+        font-size: 40px;
+    }
+
+    #timer{
+       color:green; 
+       font-size: 10px;   
+       position:fixed;
+       float:right;
+    }
+
+    .qn {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        height: auto;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    label, input {
+        font-size:30px;
+    }
+
+    .op {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .sub {
+        width: 100%;
+        margin-left: 0;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    /* Result Page */
+
+    #resultbody{
+        background-image:url('result.jpg');
+    }
+
+    #result {
+        width: 90%;
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    #score {
+        font-size: 40px;
+    }
+
+    #msg {
+        font-size: 30px;
+    }
+}

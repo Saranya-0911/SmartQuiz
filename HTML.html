@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> HTML Quizz </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body id="body">
+        <h1 id="heading">🎯 SMARTQUIZ – INTERACTIVE MCQ SYSTEM</h1>
+        <h1 id="title"> HTML Quiz</h1>
+        <div id="timer" style="color:green; font-size: 20px; font-weight:bold; margin-left:1200px;">
+            Time Left: <span id="time">60</span> Seconds
+        </div>
+        <h3 class="t"> Questions : </h3>
+        <div class="qn">
+            <p> </p>
+            <form action="#" onsubmit="return result()">
+                <label for=""><b>1. What does HTML stand for?</b></label> <br> <br> 
+                <div class="op"><input type="radio" name="1. What does HTML stand for?"> Hyperlinks and Text Markup Language</div>
+                <div class="op"><input type="radio" class="1" name="1. What does HTML stand for?"> HyperText Markup Language</div>
+                <div class="op"><input type="radio" name="1. What does HTML stand for?"> Home Tool Markup Language</div>
+                <br> <br> <br>
+
+                <label for=""><b>2. Who is making the Web standards?</b></label> <br> <br> 
+                <div class="op"><input type="radio" name="2. Who is making the Web standards?" > Microsoft</div>
+                <div class="op"><input type="radio" name="2. Who is making the Web standards?"> Google</div>
+                <div class="op"><input type="radio" class="2" name="2. Who is making the Web standards?"> World Wide Web Consortium</div>
+                <br> <br> <br>
+
+                <label for=""><b>3. Choose the correct HTML element for the largest heading:</b></label> <br> <br> 
+                <div class="op"><input type="radio" class="3" name="3. Choose the correct HTML element for the largest heading:"> h1 </div>
+                <div class="op"><input type="radio" name="3. Choose the correct HTML element for the largest heading:"> header</div>
+                <div class="op"><input type="radio" name="3. Choose the correct HTML element for the largest heading:"> head</div>
+                <br> <br> <br>
+
+                <label for=""><b>4. Which character is used to indicate an end tag?</b></label> <br> <br> 
+                <div class="op"><input type="radio" class="4" name="4. Which character is used to indicate an end tag?"> /</div>
+                <div class="op"><input type="radio" name="4. Which character is used to indicate an end tag?"> ></div>
+                <div class="op"><input type="radio" name="4. Which character is used to indicate an end tag?"> *</div>
+                 <br> <br> <br>
+
+                <label for=""><b>5. Inline elements are normally displayed without starting a new line </b></label> <br> <br> 
+                <div class="op"><input type="radio" class="5" name="5. Inline elements are normally displayed without starting a new line"> True</div>
+                <div class="op"><input type="radio" name="5. Inline elements are normally displayed without starting a new line"> False</div>
+                <br> <br> <br>
+
+                <label for=""><b>6. How can you make a numbered list?</b></label> <br> <br> 
+                <div class="op"><input type="radio" name="6. How can you make a numbered list?"> list</div>
+                <div class="op"><input type="radio" name="6. How can you make a numbered list?"> ul</div>
+                <div class="op"><input type="radio" class="6" name="6. How can you make a numbered list?"> ol</div>
+                <br> <br> <br>
+
+                <label for=""><b>7. Block elements are normally displayed without starting a new line</b></label> <br> <br> 
+                <div class="op"><input type="radio" name="7. Block elements are normally displayed without starting a new line"> True</div>
+                <div class="op"><input type="radio" class="7" name="7. Block elements are normally displayed without starting a new line"> False</div>
+                <br> <br> <br>
+
+                <label for=""><b>8. Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed?</b></label> <br> <br> 
+                <div class="op"><input type="radio" class="8" name="8. Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed?"> alt</div>
+                <div class="op"><input type="radio" name="8. Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed?"> src</div>
+                <div class="op"><input type="radio" name="8. Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed?"> alternate</div>
+                <br> <br> <br>
+
+                <label for=""><b>9. In HTML, you can embed SVG elements directly into an HTML page.</b></label> <br> <br> 
+                <div class="op"><input type="radio" class="9" name="9. In HTML, you can embed SVG elements directly into an HTML page."> True</div>
+                <div class="op"><input type="radio" name="9. In HTML, you can embed SVG elements directly into an HTML page."> False</div>
+                <br> <br> <br>
+
+                <label for=""><b>10. In HTML, onblur and onfocus are:</b></label> <br> <br> 
+                <div class="op"><input type="radio" name="10. In HTML, onblur and onfocus are:"> Style Attributes</div>
+                <div class="op"><input type="radio" class="10" name="10. In HTML, onblur and onfocus are:"> Event Attributes</div>
+                <div class="op"><input type="radio" name="10. In HTML, onblur and onfocus are:"> HTML Elements</div>
+                <br> <br> <br>
+
+                <input class="sub" type="submit" value="submit">
+            </form>
+        </div>
+
+        <script>
+            let mark = 0;
+            function result() {
+        let mark = 0;
+
+        for (let i = 1; i <= 10; i++) {
+            let correctOption = document.querySelector("input[class='" + i + "']");
+            
+            if (correctOption && correctOption.checked) {
+                mark++;
+            }
+        }
+
+        // Open a new Page & prints result
+        window.location.href = "htmlres.html?mark=" + mark;
+        return false;  // prevent form submission
+    }
+        </script>
+
+         <script src="script.js"></script>
+    </body>
+</html>

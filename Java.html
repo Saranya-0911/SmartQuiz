@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Java Quizz </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body id="body">
+        
+        <h1 id="heading">🎯 SMARTQUIZ – INTERACTIVE MCQ SYSTEM</h1>
+        <h1 id="title"> JAVA Quiz</h1>
+        <div id="timer" style="color:green; font-size: 20px; font-weight:bold; margin-left:1200px;">
+            Time Left: <span id="time">60</span> Seconds
+        </div>
+        <h3 class="t"> Questions : </h3>
+        <div class="qn">
+            <p> </p>
+            <form action="#" onsubmit="return result()">
+                <label for=""><b>1. Which keyword is used to explicitly call the parent class constructor?</b></label> <br> <br> 
+                <div class="op"><input type="radio" name="1. Which keyword is used to explicitly call the parent class constructor?"> this</div>
+                <div class="op"><input type="radio" name="1. Which keyword is used to explicitly call the parent class constructor?"> parent</div>
+                <div class="op"><input type="radio" class="1" name="1. Which keyword is used to explicitly call the parent class constructor?"> super</div>
+                <br> <br> <br>
+
+                <label for=""><b>2. What will happen if you do not handle a checked exception in Java?</b></label> <br> <br> 
+                <div class="op"><input type="radio" name="2. What will happen if you do not handle a checked exception in Java?" > Program runs normally</div>
+                <div class="op"><input type="radio" class="2" name="2. What will happen if you do not handle a checked exception in Java?"> Program will not compile</div>
+                <div class="op"><input type="radio" name="2. What will happen if you do not handle a checked exception in Java?"> Program will terminate but compile</div>
+                <br> <br> <br>
+
+                <label for=""><b>3. Which interface provides the ability to iterate through a collection one element at a time?</b></label> <br> <br> 
+                <div class="op"><input type="radio" name="3. Which interface provides the ability to iterate through a collection one element at a time?"> List </div>
+                <div class="op"><input type="radio" class="3" name="3. Which interface provides the ability to iterate through a collection one element at a time?"> Iterator</div>
+                <div class="op"><input type="radio" name="3. Which interface provides the ability to iterate through a collection one element at a time?"> Collections</div>
+                <br> <br> <br>
+
+                <label for=""><b>4. Which of the following is true about abstract classes?</b></label> <br> <br> 
+                <div class="op"><input type="radio" name="4. Which of the following is true about abstract classes?"> You can create objects from abstract classes</div>
+                <div class="op"><input type="radio" name="4. Which of the following is true about abstract classes?">Abstract classes must have only abstract methods</div>
+                <div class="op"><input type="radio" class="4"  name="4. Which of the following is true about abstract classes?"> Abstract classes can have both abstract and non-abstract methods</div>
+                 <br> <br> <br>
+
+                <label for=""><b>5. Which method is used to compare two strings for equality in Java? </b></label> <br> <br> 
+                <div class="op"><input type="radio" class="5" name="5. Which method is used to compare two strings for equality in Java?"> equals()</div>
+                <div class="op"><input type="radio" name="5. Which method is used to compare two strings for equality in Java?"> ==</div>
+                <div class="op"><input type="radio" name="5. Which method is used to compare two strings for equality in Java?"> compare()</div>
+                <br> <br> <br>
+
+                <label for=""><b>6. What does the static keyword mean in Java?</b></label> <br> <br> 
+                <div class="op"><input type="radio" name="6. What does the static keyword mean in Java?"> Belongs to an object</div>
+                <div class="op"><input type="radio" class="6" name="6. What does the static keyword mean in Java?"> Belongs to the class</div>
+                <div class="op"><input type="radio" name="6. What does the static keyword mean in Java?"> Cannot be inherited</div>
+                <br> <br> <br>
+
+                <label for=""><b>7. Which block is always executed regardless of exception?</b></label> <br> <br> 
+                <div class="op"><input type="radio" name="7. Which block is always executed regardless of exception?"> try</div>
+                <div class="op"><input type="radio" name="7. Which block is always executed regardless of exception?"> catch</div>
+                <div class="op"><input type="radio" class="7" name="7. Which block is always executed regardless of exception?"> finally</div>
+                <br> <br> <br>
+
+                <label for=""><b>8. Which of the following is NOT a feature of Java?</b></label> <br> <br> 
+                <div class="op"><input type="radio" name="8. Which of the following is NOT a feature of Java?"> Platform-independent</div>
+                <div class="op"><input type="radio" class="8" name="8. Which of the following is NOT a feature of Java?"> Pointer support</div>
+                <div class="op"><input type="radio" name="8. Which of the following is NOT a feature of Java?"> Object-oriented</div>
+                <br> <br> <br>
+
+                <label for=""><b>9. What does the JVM do?</b></label> <br> <br> 
+                <div class="op"><input type="radio"name="9. What does the JVM do?"> Converts Java code to machine code</div>
+                <div class="op"><input type="radio" name="9. What does the JVM do?"> Stores Java packages</div>
+                <div class="op"><input type="radio" class="9"  name="9. What does the JVM do?"> Creates Java objects</div>
+                <br> <br> <br>
+
+                <label for=""><b>10.Which of the following is true about Java interfaces?</b></label> <br> <br> 
+                <div class="op"><input type="radio" name="10. Which of the following is true about Java interfaces?"> An interface can have only abstract methods</div>
+                <div class="op"><input type="radio" class="10" name="10. Which of the following is true about Java interfaces?"> An interface can have default and static methods</div>
+                <div class="op"><input type="radio" name="10. Which of the following is true about Java interfaces?"> An interface cannot have variables</div>
+                <br> <br> <br>
+
+                <input class="sub" type="submit" value="submit">
+            </form>
+        </div>
+
+        <script>
+            let mark = 0;
+            function result() {
+        let mark = 0;
+
+        for (let i = 1; i <= 10; i++) {
+            let correctOption = document.querySelector("input[class='" + i + "']");
+            
+            if (correctOption && correctOption.checked) {
+                mark++;
+            }
+        }
+
+        // Open a new Page & prints result
+        window.location.href = "htmlres.html?mark=" + mark;
+        return false;  // prevent form submission
+    }
+        </script>
+
+         <script src="script.js"></script>
+    </body>
+</html>

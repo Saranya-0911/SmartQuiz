@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Bootstrap Quizz </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body id="testbody">
+
+        <h1 id="heading">🎯 SMARTQUIZ – INTERACTIVE MCQ SYSTEM</h1>
+        <h1 id="title"> Bootstrap Quiz</h1>
+        <h2 id="timer">Time Left: <span id="time">60</span> Seconds</h2>
+        <h3 class="t"> Questions : </h3>
+        <div class="qn">
+            <p> </p>
+            <form action="#" onsubmit="return result()">
+                <label for=""><b>1. What is Bootstrap mainly used for?</b></label> <br> <br> 
+                <div class="op"><input type="radio" name="1. What is Bootstrap mainly used for?"> Server-side processing</div>
+                <div class="op"><input type="radio" class="1" name="1. What is Bootstrap mainly used for?"> Responsive front-end development</div>
+                <div class="op"><input type="radio" name="1. What is Bootstrap mainly used for?"> Database design</div>
+                <br> <br> <br>
+
+                <label for=""><b>2. Which class in Bootstrap is used to create a button?</b></label> <br> <br> 
+                <div class="op"><input type="radio" class="2" name="2. Which class in Bootstrap is used to create a button?" > .btn</div>
+                <div class="op"><input type="radio" name="2. Which class in Bootstrap is used to create a button?"> .button</div>
+                <div class="op"><input type="radio" name="2. Which class in Bootstrap is used to create a button?"> .click </div>
+                <br> <br> <br>
+
+                <label for=""><b>3. Which Bootstrap class makes a container full-width?</b></label> <br> <br> 
+                <div class="op"><input type="radio" name="3. Which Bootstrap class makes a container full-width?"> .container </div>
+                <div class="op"><input type="radio" class="3" name="3. Which Bootstrap class makes a container full-width?"> .container-fluid</div>
+                <div class="op"><input type="radio" name="3. Which Bootstrap class makes a container full-width?"> .full-container</div>
+                <br> <br> <br>
+
+                <label for=""><b>4. What does the Bootstrap grid system use?</b></label> <br> <br> 
+                <div class="op"><input type="radio" name="4. What does the Bootstrap grid system use?"> 6 columns</div>
+                <div class="op"><input type="radio" class="4" name="4. What does the Bootstrap grid system use?">12 columns</div>
+                <div class="op"><input type="radio" name="4. What does the Bootstrap grid system use?"> 8 columns</div>
+                 <br> <br> <br>
+
+                <label for=""><b>5. Which class is used for a primary-colored button? </b></label> <br> <br> 
+                <div class="op"><input type="radio" name="5. Which class is used for a primary-colored button?"> .btn-blue</div>
+                <div class="op"><input type="radio" name="5. Which class is used for a primary-colored button?"> .btn-main</div>
+                <div class="op"><input type="radio" class="5" name="5. Which class is used for a primary-colored button?"> .btn-primary</div>
+                <br> <br> <br>
+
+                <label for=""><b>6. Bootstrap is mainly based on which CSS concept?</b></label> <br> <br> 
+                <div class="op"><input type="radio" name="6. Bootstrap is mainly based on which CSS concept?"> Shadow DOM</div>
+                <div class="op"><input type="radio" class="6" name="6. Bootstrap is mainly based on which CSS concept?"> CSS Flexbox and Grid</div>
+                <div class="op"><input type="radio" name="6. Bootstrap is mainly based on which CSS concept?"> CSS Table layout</div>
+                <br> <br> <br>
+
+                <label for=""><b>7. Which class is used to create an alert box in Bootstrap?</b></label> <br> <br> 
+                <div class="op"><input type="radio" name="7. Which class is used to create an alert box in Bootstrap?"> .msg </div>
+                <div class="op"><input type="radio" class="7" name="7. Which class is used to create an alert box in Bootstrap?"> .alert</div>
+                <div class="op"><input type="radio" name="7. Which class is used to create an alert box in Bootstrap?"> .notice</div>
+                <br> <br> <br>
+
+                <label for=""><b>8. Which class makes text bold in Bootstrap?</b></label> <br> <br> 
+                <div class="op"><input type="radio" name="8. Which class makes text bold in Bootstrap?"> .strong</div>
+                <div class="op"><input type="radio" class="8" name="8. Which class makes text bold in Bootstrap?"> .fw-bold</div>
+                <div class="op"><input type="radio" name="8. Which class makes text bold in Bootstrap?"> .text-bold</div>
+                <br> <br> <br>
+
+                <label for=""><b>9. Which class is used to add margin in Bootstrap?</b></label> <br> <br> 
+                <div class="op"><input type="radio"name="9. Which class is used to add margin in Bootstrap?"> .mg</div>
+                <div class="op"><input type="radio" name="9. Which class is used to add margin in Bootstrap?">.padding</div>
+                <div class="op"><input type="radio" class="9" name="9. Which class is used to add margin in Bootstrap?"> .m-*</div>
+                <br> <br> <br>
+
+                <label for=""><b>10. Which class is used to make an image responsive in Bootstrap?</b></label> <br> <br> 
+                <div class="op"><input type="radio" name="10. Which class is used to make an image responsive in Bootstrap?"> .img-auto</div>
+                <div class="op"><input type="radio" class="10" name="10. Which class is used to make an image responsive in Bootstrap?"> .img-fluid</div>
+                <div class="op"><input type="radio" name="10. Which class is used to make an image responsive in Bootstrap?"> .img-responsive</div>
+                <br> <br> <br>
+
+                <input class="sub" type="submit" value="submit">
+            </form>
+        </div>
+
+        <script>
+            let mark = 0;
+            function result() {
+        let mark = 0;
+
+        for (let i = 1; i <= 10; i++) {
+            let correctOption = document.querySelector("input[class='" + i + "']");
+            
+            if (correctOption && correctOption.checked) {
+                mark++;
+            }
+        }
+
+        // Open a new Page & prints result
+        window.location.href = "htmlres.html?mark=" + mark;
+        return false;  // prevent form submission
+    }
+        </script>
+
+         <script src="script.js"></script>
+    </body>
+</html>

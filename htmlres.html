@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Result</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet" />
+</head>
+<body id="resultbody">
+    <h1 id="heading">SMARTQUIZ – INTERACTIVE MCQ SYSTEM</h1>
+    <div id="result">
+        <i class="fa-solid fa-square-poll-horizontal" style="display:inline-block;"></i>
+        <h1 id="divtit" style="display:inline-block;">Your Quiz Result</h1>
+        <h2 id="score"></h2>
+        <h3 id="msg"></h3>
+    </div>
+    
+
+    <script>
+        // Get score from URL
+        // window.location.search - Returns everything after the ? in the URL
+        // URLSearchParams - Converts the URL text into an easy-to-read object
+        const params = new URLSearchParams(window.location.search);
+        const mark = params.get("mark");
+
+        document.getElementById("score").innerHTML = "You scored: " + mark + "/10";
+
+        if(mark <= 5){
+            document.getElementById("msg").innerHTML = "Try Again! You can do it 💪";
+        }
+        else if(4/10 < mark <= 7/10){
+            document.getElementById("msg").innerHTML = "Good! Keep improving 🙂";
+        }
+        else{
+           document.getElementById("msg").innerHTML = "Excellent! Great Job 🎉"; 
+        }
+    </script>
+</body>
+</html>
