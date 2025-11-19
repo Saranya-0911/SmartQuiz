@@ -248,10 +248,8 @@ i{
     }
 
     .reason{
-        text-align:center;
-        line-height:30px;
-        font-size:20px;
-    } 
+        padding-left:50px;
+    }
     
 
     /* Home page main container */
@@ -362,3 +360,4 @@ i{
     }
 
 }
+
