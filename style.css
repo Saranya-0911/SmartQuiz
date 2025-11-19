@@ -152,9 +152,14 @@ form{
     padding:30px 50px;
 }
 
-label, input{
-    font-size:20px;
+label{
+   font-size:20px;
 }
+    
+input {
+   font-size:30px;
+ }
+
 
 .op{
     margin-top:20px;
@@ -368,4 +373,5 @@ i{
 }
 
 }
+
 
