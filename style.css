@@ -31,7 +31,7 @@
 }
 
 .reason{
-        padding:0px 130px; 
+        padding-left:130px;  
         line-height:30px;
 }
 
@@ -360,5 +360,6 @@ i{
     }
 
 }
+
 
 
