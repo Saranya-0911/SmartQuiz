@@ -297,7 +297,7 @@ i{
 
     /* Quiz Page */
 
-    #timer{
+    .timer{
     background-color:white;
     width:auto;
     height:auto;
@@ -365,6 +365,7 @@ i{
     }
 
 }
+
 
 
 
