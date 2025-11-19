@@ -335,8 +335,8 @@ i{
         padding: 10px;
     }
 
-    b{
-        font-size:20px;
+    label{
+        font-size:10px;
     }
     
     input {
@@ -377,6 +377,7 @@ i{
 }
 
 }
+
 
 
 
