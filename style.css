@@ -303,7 +303,7 @@ i{
     height:auto;
     position:fixed;
     color:green; 
-    font-size: 30px; 
+    font-size: 10px; 
     font-weight:bold; 
     float:left;
 }
@@ -365,6 +365,7 @@ i{
     }
 
 }
+
 
 
 
